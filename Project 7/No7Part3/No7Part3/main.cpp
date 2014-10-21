@@ -14,8 +14,13 @@
 
 #include <iostream>
 #include <cstring>
+#include <string>
+#include <ctime>
 
 using namespace std;
+
+// function prototype
+void firstname(char x[], char y[]);
 
 int main()
 {
@@ -26,6 +31,9 @@ int main()
     
     // declares a variable name
     char name[15];
+	char first[15];
+	char friendname[15];
+
     // prompts user for full name
     cout << "Enter your full name: ";
     cin.get(name, 15, '\n');
@@ -49,10 +57,19 @@ int main()
     
     // displays user's first name
     cout << "\tYour first name: ";
-    
+    firstname(name, first);
     cout << endl;
     
+	cout << first << " what is your friend's ";
+	cout << "first name? ";
+	cin >> friendname;
+
     return 0;
+}
+
+void firstname(char x[], char y[])
+{
+	
 }
 
 /*===============Output=================
