@@ -21,6 +21,7 @@ using namespace std;
 
 // function prototype
 void firstname(char x[], char y[]);
+void compare(char x[], char y[]);
 
 int main()
 {
@@ -64,12 +65,26 @@ int main()
 	cout << "first name? ";
 	cin >> friendname;
 
+	compare(first, friendname);
+
     return 0;
 }
 
 void firstname(char x[], char y[])
 {
 	
+}
+
+void compare(char x[], char y[])
+{
+	strlwr(x);
+	strlwr(y);
+	if(strcmp(x, y) == 0)
+		cout << "Your name is the same as your"
+			<< " friend's name";
+	else
+		cout << "You do not have the same name"
+			<< " as your friend";
 }
 
 /*===============Output=================
