@@ -1,6 +1,15 @@
 //============================================
 //  File: No7Part3.cpp
 //============================================
+//  Programmer: Sergio Gomez
+//  Date: 10/20/2014
+//  Class: CPSC 121
+//  Professor: Dr. Ray Ahmadnia
+//  Project: No.7 Part 3
+//
+//  Description:
+//      This program pracitces the members
+//      <cstring> library
 //============================================
 
 #include <iostream>
@@ -16,15 +25,21 @@ int main()
     
     cout << "\tYour name's length is ";
     cout << strlen(name);
+    cout << endl;
     
     cout << "\tYour name in lower case: ";
-    cout << strlow(name);
+    strlow(name);
+    cout << name;
+    cout << endl;
     
     cout << "\tYour name in upper case: ";
-    cout << strupr(name);
+    strupr(name);
+    cout << name;
+    cout << endl;
     
     cout << "\tYour first name: ";
-    cout << 
+    
+    cout << endl;
     
     return 0;
 }
