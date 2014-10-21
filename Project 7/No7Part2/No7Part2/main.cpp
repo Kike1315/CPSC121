@@ -77,6 +77,7 @@ void readData(string fname, PERSON x[], int n)
         f.get(x[i].name, 20, '\n');
         f.ignore();
     }
+    f.close();
 }
 
 void display(PERSON x[], int n)
